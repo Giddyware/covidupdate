@@ -1,0 +1,83 @@
+/* Style the button that is used to open and close the collapsible content
+/* .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/*.active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+/* .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  } */
+/*   
+  .btn{
+    text-align: center;
+  } */
+.collapse-icon .card-header {
+  position: relative;
+}
+
+.collapse-icon [data-toggle='collapse']:after {
+  position: absolute;
+  top: 48%;
+  right: 20px;
+  margin-top: -8px;
+  font-family: 'feather';
+  /* content: '\e845'; */
+  transition: all 300ms linear 0s;
+  font-size: 0.9rem;
+}
+
+.collapse-icon [data-toggle='collapse']:before {
+  position: absolute;
+  top: 48%;
+  right: 20px;
+  margin-top: -8px;
+  font-family: 'feather';
+  /* content: '\e842'; */
+  transition: all 300ms linear 0s;
+  font-size: 0.9rem;
+}
+
+.collapse-icon [aria-expanded="true"]:before {
+  opacity: 0;
+}
+
+.collapse-icon.left a {
+  padding-left: 28px;
+}
+.collapse-icon.left a:before,
+.collapse-icon.left a:after {
+  left: 20px;
+  right: auto;
+}
+
+.collapse-icon [aria-expanded='true']:before {
+  opacity: 0;
+}
+
+.collapse-icon [aria-expanded='false']:after {
+  opacity: 0;
+}
+
+.collapse-icon.accordion-icon-rotate [aria-expanded='true']:before {
+  transform: rotate(180deg);
+}
+
+.collapse-icon.accordion-icon-rotate [aria-expanded='false']:after {
+  transform: rotate(-180deg);
+}

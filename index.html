@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/yeti/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <dir>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a href="#" class="navbar-brand">COVID 19 TRACKER</a>
+        </div>
+        <!-- <button class="nar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"></button> -->
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Country Stats</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="faqs.html" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a href="myth_busters.html" class="nav-link">Myth Busters</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </dir>
+    <div class="container searchContainer">
+      <div class="search card card-body">
+        <h1>World Statistic for Covid 19</h1>
+        <p class="lead">Enter a country to fetch the for Covid 19 case</p>
+        <input
+          type="text"
+          id="searchDetail"
+          class="form-control"
+          placeholder="Search For Countries..."
+        />
+      </div>
+      <br />
+      <div id="details"></div>
+    </div>
+
+    <footer class="mt-5 p-3 text-center bg-light">
+      Covid 19 Tracker &copy;
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="covid.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
