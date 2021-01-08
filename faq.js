@@ -18,7 +18,7 @@ const accd = document.getElementById('collapseNine');
 
 const iconSwitch = () => {
   accd.classList.add('collapse-icon.accordion-icon-rotate');
-  console.log('worin');
+  console.log('working');
 };
 
 iconNine.addEventListener('click', iconSwitch);
